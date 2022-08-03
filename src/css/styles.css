@@ -63,7 +63,7 @@ li {
 }
 
 body {
-  background-color: pink;
+  font-family: "Open Sans", sans-serif;
 }
 
 .mt-2 {
@@ -1234,40 +1234,57 @@ body {
   padding-left: 120px;
 }
 
+.m-auto {
+  margin: auto;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.mr-auto {
+  margin-right: auto;
+}
+
 .text-xs {
-  font-size: 11;
+  font-size: 11px;
 }
 
 .text-sm {
-  font-size: 13;
+  font-size: 13px;
 }
 
 .text-md {
-  font-size: 15;
+  font-size: 15px;
 }
 
 .text-lg {
-  font-size: 16;
+  font-size: 16px;
 }
 
 .text-xl {
-  font-size: 20;
+  font-size: 20px;
 }
 
 .text-2xl {
-  font-size: 24;
+  font-size: 24px;
 }
 
 .text-3xl {
-  font-size: 25;
+  font-size: 25px;
 }
 
 .text-4xl {
-  font-size: 40;
+  font-size: 40px;
 }
 
 .text-5xl {
-  font-size: 60;
+  font-size: 60px;
 }
 
 .xlight {
@@ -1288,4 +1305,46 @@ body {
 
 .bold {
   font-weight: 800;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.container-fluid {
+  max-width: 1060px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.ib {
+  display: inline-block;
+}
+
+.grid {
+  display: grid;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.clearfix::after {
+  display: block;
+  content: "";
+  clear: both;
 }

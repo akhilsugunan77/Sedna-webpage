@@ -3,7 +3,7 @@
 
 @each $name,$size in $font-size{
     .text-#{$name}{
-        font-size: $size;
+        font-size: #{$size}px;
     }
 }
 
@@ -11,4 +11,8 @@
     .#{$n}{
         font-weight:$s;
     }
+}
+
+.uppercase{
+    text-transform: uppercase;
 }
