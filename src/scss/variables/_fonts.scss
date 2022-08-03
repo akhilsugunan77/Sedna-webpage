@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap');
+@import url('http://fonts.cdnfonts.com/css/avenir-next-lt-pro');
+
+
+$font-family-open:'Open Sans', sans-serif;
+$font-family-avenir:'Avenir Next LT Pro', sans-serif;
+
+
+// ================================  FONT map ===============================================
+
+$font-size:(
+    "xs":11,
+    "sm":13,
+    "md":15,
+    "lg":16,
+    "xl":20,
+    "2xl":24,
+    "3xl":25,
+    "4xl":40,
+    "5xl":60
+);
+
+$font-weight:(
+    "xlight":200,
+    "light":300,
+    "normal":500,
+    "semi-bold":600,
+    "bold":800
+);
+
+$line-height: 25 30 40; 

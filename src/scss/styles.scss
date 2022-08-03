@@ -1,5 +1,4 @@
-$p:green;
-
-body{
-    background: $p;
-}
+@use "variables";
+@use "global";
+@use "helper";
+@use "layout";

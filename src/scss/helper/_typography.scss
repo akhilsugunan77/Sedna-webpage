@@ -1,0 +1,14 @@
+@use "variables" as *;
+
+
+@each $name,$size in $font-size{
+    .text-#{$name}{
+        font-size: $size;
+    }
+}
+
+@each $n,$s in $font-weight{
+    .#{$n}{
+        font-weight:$s;
+    }
+}
