@@ -1543,6 +1543,9 @@ body {
 .burger {
   font-size: 40px;
 }
+.burger:hover {
+  color: #ff5274;
+}
 @media screen and (min-width: 1000px) {
   .burger {
     display: none;

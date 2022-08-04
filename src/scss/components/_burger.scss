@@ -1,8 +1,11 @@
 @use "abstract" as *;
-
+@use "variables" as *;
 
 .burger{
     font-size: 40px;
+    &:hover{
+        color: $btn-warning;
+    }
     @include media(desktop){
         display: none;
     }
