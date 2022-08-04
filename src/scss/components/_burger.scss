@@ -1,0 +1,9 @@
+@use "abstract" as *;
+
+
+.burger{
+    font-size: 40px;
+    @include media(desktop){
+        display: none;
+    }
+}

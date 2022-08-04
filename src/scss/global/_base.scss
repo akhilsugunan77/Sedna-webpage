@@ -8,8 +8,57 @@ body{
 
 .hero{
     @include size(100vw,100vh);
+    position: relative;
+
+    .sm-none{
+        display: none;
+    }
+    @include media(desktop){
+        .sm-none{
+            display: flex;
+        }
+    }
 
     article{
         @include center;
+        h2{
+            font-size: 40px;
+        }
+        h1{
+            font-size: 18px;
+            padding: 0 10px;
+        }
+        @include media(tablet){
+            h2{
+                font-size: 50px;
+            }
+            h1{
+                font-size: 18px;
+                font-weight: 300;
+                padding: 0 20px;
+            }
+        }
+
+        @include media(desktop){
+            h2{
+                font-size: 60px;
+            }
+            h1{
+                font-size: 20px;
+                font-weight: 300;
+                padding: 0 80px;
+            }
+        }
+
     }
+
+    .chevron{
+        @include down-center;
+        color: $white;
+        font-size: 40px;
+        &:hover{
+            color:$text-red-100;
+        }
+    }
+
 }

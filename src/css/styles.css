@@ -81,12 +81,59 @@ body {
 .hero {
   width: 100vw;
   height: 100vh;
+  position: relative;
+}
+.hero .sm-none {
+  display: none;
+}
+@media screen and (min-width: 1000px) {
+  .hero .sm-none {
+    display: flex;
+  }
 }
 .hero article {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.hero article h2 {
+  font-size: 40px;
+}
+.hero article h1 {
+  font-size: 18px;
+  padding: 0 10px;
+}
+@media screen and (min-width: 600px) {
+  .hero article h2 {
+    font-size: 50px;
+  }
+  .hero article h1 {
+    font-size: 18px;
+    font-weight: 300;
+    padding: 0 20px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .hero article h2 {
+    font-size: 60px;
+  }
+  .hero article h1 {
+    font-size: 20px;
+    font-weight: 300;
+    padding: 0 80px;
+  }
+}
+.hero .chevron {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+  color: #ffffff;
+  font-size: 40px;
+}
+.hero .chevron:hover {
+  color: #ff5274;
 }
 
 .mt-2 {
@@ -1491,4 +1538,13 @@ body {
 
 .links:hover {
   color: #ff5274;
+}
+
+.burger {
+  font-size: 40px;
+}
+@media screen and (min-width: 1000px) {
+  .burger {
+    display: none;
+  }
 }
