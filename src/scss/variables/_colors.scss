@@ -1,5 +1,5 @@
 // ================================   TEXT COLORS ===============================================
-$text-white:#ffffff;
+$white:#ffffff;
 
 $text-light-100:#bcc1c3;
 $text-light-200:#acb1b4;
@@ -23,11 +23,11 @@ $bg-dark-300:#373d4a;
 $bg-dark-400:#3d4351cc;
 $bg-dark-500:#262b39e6;
 
-$bg-red:#ff5274;
+$bg-warning:#ff5274;
 
 // ================================     COMPONENT COLORS =========================================
 $btn-primary:#ffffff;
-$btn-secondary:#ff5274;
+$btn-warning:#ff5274;
 
 $border-color:#e6e9ea;
 
@@ -36,3 +36,10 @@ $icon-primary:#ff5274;
 $icon-twitter:#1ab4ef;
 $icon-facebook:#3b5898;
 
+// ================================  BACKGROUND =========================================
+
+.bg-hero{
+    background-image:linear-gradient( $bg-dark-500 , $bg-dark-500), url("../../assets/hero-image-01.png");
+    background-size: cover;
+    background-position: center;
+}

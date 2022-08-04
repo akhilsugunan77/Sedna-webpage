@@ -1,0 +1,37 @@
+@use "variables" as *;
+
+.button{
+    display: inline-block;
+    font-size: 13px;
+    color: $white;
+    border-radius: 40px;
+    &:hover{
+        color: black;
+    }
+}
+
+.button-primary{
+    @extend .button;
+    border: 2px solid $white;
+    padding: 10px 30px;
+}
+
+
+.button-warning{
+    @extend .button;
+    background-color: $btn-warning;
+    padding: 18px 36px;
+}
+
+.button-warning-lg{
+    @extend .button-warning;
+    border-radius: none;
+}
+
+.button-warning-transparent{
+    @extend .button-warning;
+    background-color: transparent;
+    color: $btn-warning;
+    border: 2px solid $btn-warning;
+}
+

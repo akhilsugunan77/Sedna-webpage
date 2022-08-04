@@ -1,5 +1,6 @@
 .container-fluid{
     max-width: 1060px;
+    width: 100%;
 }
 
 .text-center{
@@ -12,13 +13,28 @@
     display: flex;
 }
 
+.flexcol{
+    flex-direction: column;
+}
+
 .items-center{
     align-items: center;
 }
 
+.justify-center{
+    justify-content: center;
+}
+
+.space-between{
+    justify-content: space-between;
+}
 
 .ib{
     display: inline-block;
+}
+
+.block{
+    display:block;
 }
 
 .grid{
@@ -37,4 +53,17 @@
     display: block;
     content: "";
     clear: both;
+}
+
+.w-20{
+    width: 20%;
+}
+.w-50{
+    width: 50%;
+}
+.w-100{
+    width: 100%;
+}
+.h-100{
+    height: 100%;
 }
