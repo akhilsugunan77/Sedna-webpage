@@ -1,0 +1,37 @@
+@use "abstract" as *;
+
+.fl-3col{
+    &::after{
+        display: block;
+        content: "";
+        clear: both;
+    }
+    .cols{
+        float: left;
+        width: 100%;
+    @include media(tablet){
+            width:calc(50% - 40px);
+    }
+    @include media(desktop){
+        width: calc(33.33% - 40px);
+    }
+    
+}
+}
+
+.grid-col-3{
+    gap: 20px;
+    @include media(tablet){
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    @include media(desktop){
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+.grid-card-2{
+    grid-template-columns: .1fr 1fr;
+    gap: 10px;
+}
+

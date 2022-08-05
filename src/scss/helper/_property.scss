@@ -17,6 +17,10 @@
     flex-direction: column;
 }
 
+.flexwrap{
+    flex-wrap: wrap;
+}
+
 .items-center{
     align-items: center;
 }
@@ -48,7 +52,9 @@
 .fr{
     float: right;
 }
-
+.cb{
+    clear: both;
+}
 .clearfix::after{
     display: block;
     content: "";
@@ -58,12 +64,11 @@
 .w-20{
     width: 20%;
 }
+
 .w-50{
     width: 50%;
 }
+
 .w-100{
     width: 100%;
-}
-.h-100{
-    height: 100%;
 }

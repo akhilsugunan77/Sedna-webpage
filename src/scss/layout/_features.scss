@@ -1,0 +1,18 @@
+@use "variables" as *;
+@use "abstract" as *;
+
+
+.features{
+    gap: 20px;
+    h3{
+        color: $text-dark-100;
+    }
+
+    p{
+        color: $text-dark-200;
+        line-height: 25px;
+    }
+    article{
+        width:340px;
+    }
+}
