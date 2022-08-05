@@ -1,13 +1,7 @@
-.bg-hero {
-  background-image: linear-gradient(rgba(38, 43, 57, 0.9019607843), rgba(38, 43, 57, 0.9019607843)), url("../../assets/hero-image-01.png");
-  background-size: cover;
-  background-position: center;
-}
-
 @font-face {
   font-family: "open_sansregular";
   src: url("fonts/OpenSans-Regular-webfont.eot");
-  src: url("fonts/OpenSans-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/OpenSans-Regular-webfont.woff2") format("woff2"), url("fonts/OpenSans-Regular-webfont.woff") format("woff"), url("fonts/OpenSans-Regular-webfont.ttf") format("truetype"), url("fonts/OpenSans-Regular-webfont.svg#open_sansregular") format("svg");
+  src: url("fonts/OpenSans-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/OpenSans-Regular-webfont.woff") format("woff"), url("fonts/OpenSans-Regular-webfont.ttf") format("truetype"), url("fonts/OpenSans-Regular-webfont.svg#open_sansregular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -79,7 +73,7 @@ body {
 }
 
 .hero {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   position: relative;
 }
@@ -130,7 +124,6 @@ body {
   left: 50%;
   transform: translate(-50%);
   color: #ffffff;
-  font-size: 40px;
 }
 .hero .chevron:hover {
   color: #ff5274;
@@ -1550,4 +1543,30 @@ body {
   .burger {
     display: none;
   }
+}
+
+.bg-hero {
+  background-image: linear-gradient(rgba(38, 43, 57, 0.9019607843), rgba(38, 43, 57, 0.9019607843)), url("../../assets/hero-image-01.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.fl-3col article {
+  float: left;
+  width: 100%;
+}
+@media screen and (min-width: 600px) {
+  .fl-3col article {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .fl-3col article {
+    width: 33.33%;
+  }
+}
+.fl-3col article::after {
+  display: block;
+  content: "";
+  clear: both;
 }

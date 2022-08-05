@@ -35,11 +35,3 @@ $border-color:#e6e9ea;
 $icon-primary:#ff5274;
 $icon-twitter:#1ab4ef;
 $icon-facebook:#3b5898;
-
-// ================================  BACKGROUND =========================================
-
-.bg-hero{
-    background-image:linear-gradient( $bg-dark-500 , $bg-dark-500), url("../../assets/hero-image-01.png");
-    background-size: cover;
-    background-position: center;
-}

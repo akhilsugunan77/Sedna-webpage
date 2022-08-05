@@ -7,7 +7,7 @@ body{
 }
 
 .hero{
-    @include size(100vw,100vh);
+    @include size(100%,100vh);
     position: relative;
 
     .sm-none{
@@ -55,7 +55,6 @@ body{
     .chevron{
         @include down-center;
         color: $white;
-        font-size: 40px;
         &:hover{
             color:$text-red-100;
         }
