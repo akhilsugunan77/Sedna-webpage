@@ -15,6 +15,7 @@
         color: $text-dark-200
     }
     article{
+        gap: 20px;
         h3{
             font-size: 15px;
             font-weight: 600;
@@ -37,7 +38,6 @@
 
 .text-container{
     @include size(450px,100%);
-    background-color: rgb(224, 218, 230);
     position: absolute;
     right: 0;
 }

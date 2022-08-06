@@ -1,11 +1,6 @@
 @use "abstract" as *;
 @use "variables" as *;
 
- .flask {
-    background: url('../../assets/Images/icons2/flask.png') no-repeat;
-    width: 31px; 
-    height: 38px; 
-}
 
 .pencil{
     background: url('../../assets/Images/icons/scale-pencil.png') no-repeat;
@@ -24,14 +19,23 @@
     width: 42px;
     height: 42px;
 }
+
 .recycle{
     background: url('../../assets/Images/icons2/recyle.png') no-repeat;
-    width: 42px;
+    width: 50px;
     height: 42px;
 }
-.react{
-    background: url('../../assets/Images/icons/react-icon.png') no-repeat;
-    width: 42px;
+
+.person{
+    background: url('../../assets/Images/icons2/person.png') no-repeat;
+    width: 62px;
     height: 42px;
 }
+
+.flask {
+    background: url('../../assets/Images/icons2/flask.png') no-repeat;
+    width: 50px; 
+    height: 42px; 
+}
+
 

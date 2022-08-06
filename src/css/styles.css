@@ -1358,7 +1358,7 @@ body {
 }
 
 .border-primary {
-  border-bottom: 1px solid #ffffff;
+  border-bottom: 1px solid #e6e9ea;
 }
 
 .container-fluid {
@@ -1456,7 +1456,7 @@ body {
 }
 
 .bg-featured {
-  background-color: #e6e9ea;
+  background-color: #f7f8fa;
 }
 
 .button, .button-warning, .button-warning-transparent, .button-warning-lg, .button-primary {
@@ -1507,12 +1507,6 @@ body {
   }
 }
 
-.flask {
-  background: url("../../assets/Images/icons2/flask.png") no-repeat;
-  width: 31px;
-  height: 38px;
-}
-
 .pencil {
   background: url("../../assets/Images/icons/scale-pencil.png") no-repeat;
   width: 42px;
@@ -1533,13 +1527,19 @@ body {
 
 .recycle {
   background: url("../../assets/Images/icons2/recyle.png") no-repeat;
-  width: 42px;
+  width: 50px;
   height: 42px;
 }
 
-.react {
-  background: url("../../assets/Images/icons/react-icon.png") no-repeat;
-  width: 42px;
+.person {
+  background: url("../../assets/Images/icons2/person.png") no-repeat;
+  width: 62px;
+  height: 42px;
+}
+
+.flask {
+  background: url("../../assets/Images/icons2/flask.png") no-repeat;
+  width: 50px;
   height: 42px;
 }
 
@@ -1672,6 +1672,9 @@ body {
   line-height: 25px;
   color: rgba(28, 54, 83, 0.7019607843);
 }
+.featured article {
+  gap: 20px;
+}
 .featured article h3 {
   font-size: 15px;
   font-weight: 600;
@@ -1695,7 +1698,6 @@ body {
 .text-container {
   width: 450px;
   height: 100%;
-  background-color: rgb(224, 218, 230);
   position: absolute;
   right: 0;
 }
