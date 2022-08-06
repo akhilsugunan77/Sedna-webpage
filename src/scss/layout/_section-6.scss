@@ -1,0 +1,20 @@
+@use "variables" as *;
+@use "abstract" as *;
+
+.section-6{
+    h2{
+        font-size: 24px;
+        color: $text-dark-100;
+    }
+    h3{
+        font-size: 15px;
+        font-weight: 600;
+        color: $text-dark-100;
+    }
+    p{
+        font-size: 15px;
+        font-weight: 300;
+        color: $text-light-300;
+        line-height: 30px;
+    }
+}

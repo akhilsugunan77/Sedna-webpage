@@ -1,0 +1,16 @@
+@use "variables" as *;
+@use "abstract" as *;
+
+
+
+.section-4{
+    h2{
+        font-size: 24px;
+        color: $text-dark-100;   
+    }
+    p{
+        font-size: 15px;
+        color: $text-dark-200;
+        line-height: 25px;
+    }
+}

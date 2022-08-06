@@ -1,0 +1,25 @@
+@use "variables" as *;
+@use "abstract" as *;
+
+.section-5{
+    height: 500px;
+    h2{
+        font-size: 40px;             
+        span{
+            font-family: $font-family-avenir;
+            font-weight: 200;
+        }
+        span.super{
+            color: $color-orange;
+            vertical-align: super;
+        }
+    }
+    p{
+        font-size: 16px;
+        color: $text-light-200;
+    }
+    .diamond{
+        @include down-center;
+        bottom:-80px;
+    }
+}
