@@ -1,6 +1,37 @@
-.icon1, .icon, .icon2
-{ display: inline-block; background: url('../../assets/icons/icons.png') no-repeat; overflow: hidden; text-indent: -9999px; text-align: left; }
+@use "abstract" as *;
+@use "variables" as *;
 
-.icon1 { background-position: -2px -0px; width: 42px; height: 42px; }
-.icon { background-position: -2px -44px; width: 39px; height: 42px; }
-.icon2 { background-position: -2px -88px; width: 29px; height: 42px; }
+ .flask {
+    background: url('../../assets/Images/icons2/flask.png') no-repeat;
+    width: 31px; 
+    height: 38px; 
+}
+
+.pencil{
+    background: url('../../assets/Images/icons/scale-pencil.png') no-repeat;
+    width: 42px;
+    height: 42px;
+}
+
+.bulb{
+    background: url('../../assets/Images/icons/bulb.png') no-repeat;
+    width: 42px;
+    height: 42px;
+}
+
+.react{
+    background: url('../../assets/Images/icons/react-icon.png') no-repeat;
+    width: 42px;
+    height: 42px;
+}
+.recycle{
+    background: url('../../assets/Images/icons2/recyle.png') no-repeat;
+    width: 42px;
+    height: 42px;
+}
+.react{
+    background: url('../../assets/Images/icons/react-icon.png') no-repeat;
+    width: 42px;
+    height: 42px;
+}
+

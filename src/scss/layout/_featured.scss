@@ -3,6 +3,8 @@
 
 
 .featured{
+    @include size(100%,760px);
+    overflow: hidden;
     h2{
         font-size: 24px;
         color: $text-dark-100;
@@ -10,5 +12,32 @@
     p{
         font-size: 15px;
         line-height: 25px;
+        color: $text-dark-200
     }
+    article{
+        h3{
+            font-size: 15px;
+            font-weight: 600;
+            color: $text-dark-100;
+        }
+    }
+}
+
+.ipad{
+    @include size(550px,1000px);
+    position: absolute
+}
+
+.iphone{
+    @include size(305px,600px);
+    position: absolute;
+    bottom: -200px;
+    left: 25%; 
+}
+
+.text-container{
+    @include size(450px,100%);
+    background-color: rgb(224, 218, 230);
+    position: absolute;
+    right: 0;
 }
