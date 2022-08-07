@@ -1,0 +1,14 @@
+@use "abstract" as *;
+@use "variables" as *;
+
+
+.contact{
+    h2{
+        font-size: 24px;
+    }
+    p{
+        font-size: 15px;
+        line-height: 30px;
+        color: $color-40;
+    }
+}
