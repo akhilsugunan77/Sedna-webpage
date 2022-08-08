@@ -21,7 +21,7 @@
         color: $text-light-200;
     }
     .diamond{
-        @include down-center;
+        @include center-btm;
         bottom:-80px;
     }
 }

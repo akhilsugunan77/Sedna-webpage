@@ -2,7 +2,8 @@
 @use "variables" as *;
 
 .input-container{
-    @include size(400px,100%);
+    @include size(100%,100%);
+    max-width: 400px;
     display: flex;
     flex-direction: column;
     gap: 10px;

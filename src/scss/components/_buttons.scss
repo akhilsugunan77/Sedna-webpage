@@ -2,6 +2,8 @@
 // ================================  buttons ===============================================
 .button{
     display: inline-block;
+    width: 100%;
+    max-width: fit-content;
     font-size: 13px;
     color: $white;
     border-radius: 40px;

@@ -46,7 +46,7 @@
     }
 
     .scoll-dots{
-        @include down-center;
+        @include center-btm;
         div{
             background-color: $color-50;
             display: inline-block;
