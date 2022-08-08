@@ -1872,7 +1872,7 @@ footer .container {
 }
 footer .col1 {
   background-color: #3d4351;
-  flex: 6 1 600px;
+  flex: 6 1 400px;
 }
 footer .col1 .copyright {
   color: #acb1b4;
@@ -1887,7 +1887,7 @@ footer .col1 .copyright a:hover {
 }
 footer .col1 .border-primary-t {
   max-width: 600px;
-  width: 100%;
+  width: 80%;
 }
 footer .col2 {
   position: relative;
