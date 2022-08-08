@@ -9,8 +9,10 @@
             font-family: $font-family-avenir;
             font-weight: 200;
         }
-        span.super{
+        .super{
             color: $color-orange;
+            font-size: 24px;
+            font-weight: 200;
             vertical-align: super;
         }
     }

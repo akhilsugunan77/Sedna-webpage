@@ -29,6 +29,9 @@
        top: 50%;
        left: 50px;
        transform: translateY(-50%);
+       &:hover{
+        color: $white;
+       }
     }
 
     .fa-chevron-right{
@@ -37,6 +40,9 @@
        top: 50%;
        right: 50px;
        transform: translateY(-50%);
+       &:hover{
+        color: $white;
+       }
     }
 
     .scoll-dots{

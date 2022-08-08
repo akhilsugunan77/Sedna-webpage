@@ -5,6 +5,8 @@
 .featured{
     @include size(100%,760px);
     overflow: hidden;
+    border-top: 1px solid $bg-light-200;
+    border-bottom: 1px solid $bg-light-200;
     h2{
         font-size: 24px;
         color: $text-dark-100;
