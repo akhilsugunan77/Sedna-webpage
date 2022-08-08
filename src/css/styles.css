@@ -1857,28 +1857,10 @@ body {
 footer {
   background-color: #3d4351;
 }
-footer .footer-icon {
+footer .band {
   width: 100%;
   height: 60px;
-  position: relative;
   background-color: #495061;
-}
-footer .footer-icon i {
-  display: inline-block;
-  width: 70px;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  right: 20%;
-  transform: translateX(-20%);
-  color: #ffffff;
-  background-color: #373d4a;
-}
-footer .footer-icon i::before {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 footer .container {
   display: flex;
@@ -1908,6 +1890,7 @@ footer .col1 .border-primary-t {
   width: 100%;
 }
 footer .col2 {
+  position: relative;
   flex: 4 1 400px;
   background-color: #373d4a;
   line-height: 40px;
@@ -1934,6 +1917,21 @@ footer .col2 .fa-facebook {
   font-size: 22px;
 }
 footer .col2 .fa-facebook::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+footer .col2 .arrow-top {
+  width: 60px;
+  height: 60px;
+  background: #373d4a;
+  position: absolute;
+  top: -60px;
+  right: 50%;
+  transform: translate(50%);
+}
+footer .col2 .arrow-top i {
   position: absolute;
   top: 50%;
   left: 50%;
