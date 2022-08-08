@@ -1405,6 +1405,10 @@ body {
   flex-wrap: wrap;
 }
 
+.gap-20 {
+  gap: 20px;
+}
+
 .items-center {
   align-items: center;
 }
@@ -1860,12 +1864,13 @@ footer .footer-icon {
   background-color: #495061;
 }
 footer .footer-icon i {
+  display: inline-block;
   width: 70px;
   height: 100%;
   position: absolute;
   top: 0;
-  right: 280px;
-  display: inline-block;
+  right: 20%;
+  transform: translateX(-20%);
   color: #ffffff;
   background-color: #373d4a;
 }
@@ -1886,10 +1891,6 @@ footer .container {
 footer .col1 {
   background-color: #3d4351;
   flex: 6 1 600px;
-}
-footer .col1 .flex {
-  gap: 20px;
-  font-size: 13px;
 }
 footer .col1 .copyright {
   color: #acb1b4;

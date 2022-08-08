@@ -10,12 +10,13 @@ footer{
         position: relative;
         background-color: $bg-dark-100;
         i{  
+            display: inline-block;
             width: 70px;
             height: 100%;
             position: absolute;
             top: 0;
-            right: 280px;
-            display: inline-block;
+            right: 20%;
+            transform: translateX(-20%);
             color: $white;
             background-color: $bg-dark-300;
             &::before{
@@ -33,10 +34,6 @@ footer{
     .col1{
         background-color: $bg-dark-200;
         flex: 6 1 600px;
-        .flex{
-            gap: 20px;
-            font-size: 13px;
-        }
         .copyright{
             color: $color-20;
             line-height: 25px;
