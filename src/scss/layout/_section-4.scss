@@ -13,4 +13,11 @@
         color: $text-dark-200;
         line-height: 25px;
     }
+    .container-fluid{
+        max-width: 500px;
+        width: 100%;
+        @include media(desktop){
+            max-width: 1060px;
+        }
+    }
 }

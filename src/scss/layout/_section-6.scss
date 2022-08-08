@@ -2,6 +2,15 @@
 @use "abstract" as *;
 
 .section-6{
+
+    @include media(mobile){
+        article{
+            padding: 0;
+            margin-bottom: 20px;
+            border: none;
+        }
+    }
+
     h2{
         font-size: 24px;
         color: $text-dark-100;

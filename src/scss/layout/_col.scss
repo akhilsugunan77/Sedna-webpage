@@ -18,13 +18,15 @@
 }
 
 .fl-2{
-    .col1{
-        float: left;
-        width: 50%;
-    }
-    .col2{
-        float: right;
-        width: 50%;
+    @include media(tablet){
+        .col1{
+            float: left;
+            width: 50%;
+        }
+        .col2{
+            float: right;
+            width: 50%;
+        }
     }
 }
 

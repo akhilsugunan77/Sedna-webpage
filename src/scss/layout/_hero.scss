@@ -8,10 +8,8 @@
 
     .sm-none{
         display: none;
-    }
-    @include media(desktop){
-        .sm-none{
-            display: flex;
+        @include media(desktop){
+                display: flex;
         }
     }
 
@@ -54,7 +52,7 @@
     }
 
     .chevron{
-        @include down-center;
+        @include center-btm;
         color: $white;
         &:hover{
             color:$text-red-100;
