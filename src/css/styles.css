@@ -1491,6 +1491,15 @@ body {
   height: 100%;
 }
 
+.h-300px {
+  height: 300px;
+}
+
+.cover {
+  object-fit: cover;
+  object-position: center;
+}
+
 .bg-hero {
   background-image: linear-gradient(rgba(38, 43, 57, 0.9019607843), rgba(38, 43, 57, 0.9019607843)), url("../../assets/Images/hero/hero-image-01.png");
   background-size: cover;
