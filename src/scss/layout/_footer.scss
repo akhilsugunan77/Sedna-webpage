@@ -23,10 +23,16 @@ footer{
             }
         }
     }
+    .container{
+        display: flex;
+        @include media(mobile){
+            flex-direction: column-reverse;
+        }
+    }
 
     .col1{
         background-color: $bg-dark-200;
-
+        flex: 6 1 600px;
         .flex{
             gap: 20px;
             font-size: 13px;
@@ -42,9 +48,14 @@ footer{
                 }
             }
         }
+        .border-primary-t{
+            max-width: 600px;
+            width: 100%;
+        }
     }
 
     .col2{
+        flex: 4 1 400px;
         background-color: $bg-dark-300;
         line-height: 40px;
         .fa-twitter{

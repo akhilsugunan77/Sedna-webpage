@@ -1580,7 +1580,7 @@ body {
   text-align: left;
 }
 .hero article h1 {
-  font-size: 18px;
+  font-size: 15px;
   padding: 0 10px;
   text-align: left;
 }
@@ -1705,7 +1705,12 @@ body {
   height: 500px;
 }
 .section-5 h2 {
-  font-size: 40px;
+  font-size: 30px;
+}
+@media screen and (min-width: 600px) {
+  .section-5 h2 {
+    font-size: 40px;
+  }
 }
 .section-5 h2 span {
   font-family: "Avenir Next LT Pro", sans-serif;
@@ -1718,8 +1723,13 @@ body {
   vertical-align: super;
 }
 .section-5 p {
-  font-size: 16px;
+  font-size: 15px;
   color: #acb1b4;
+}
+@media screen and (min-width: 600px) {
+  .section-5 p {
+    font-size: 16px;
+  }
 }
 .section-5 .diamond {
   display: none;
@@ -1768,10 +1778,15 @@ body {
   padding: 50px;
 }
 .scoller h2 {
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 300;
   font-style: italic;
   color: #ffffff;
+}
+@media screen and (min-width: 600px) {
+  .scoller h2 {
+    font-size: 40px;
+  }
 }
 .scoller h3 {
   font-size: 15px;
@@ -1786,6 +1801,11 @@ body {
   left: 50px;
   transform: translateY(-50%);
 }
+@media screen and (max-width: 599px) {
+  .scoller .fa-chevron-left {
+    display: none;
+  }
+}
 .scoller .fa-chevron-left:hover {
   color: #ffffff;
 }
@@ -1795,6 +1815,11 @@ body {
   top: 50%;
   right: 50px;
   transform: translateY(-50%);
+}
+@media screen and (max-width: 599px) {
+  .scoller .fa-chevron-right {
+    display: none;
+  }
 }
 .scoller .fa-chevron-right:hover {
   color: #ffffff;
@@ -1850,8 +1875,17 @@ footer .footer-icon i::before {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+footer .container {
+  display: flex;
+}
+@media screen and (max-width: 599px) {
+  footer .container {
+    flex-direction: column-reverse;
+  }
+}
 footer .col1 {
   background-color: #3d4351;
+  flex: 6 1 600px;
 }
 footer .col1 .flex {
   gap: 20px;
@@ -1868,7 +1902,12 @@ footer .col1 .copyright a {
 footer .col1 .copyright a:hover {
   color: #ff5274;
 }
+footer .col1 .border-primary-t {
+  max-width: 600px;
+  width: 100%;
+}
 footer .col2 {
+  flex: 4 1 400px;
   background-color: #373d4a;
   line-height: 40px;
 }
