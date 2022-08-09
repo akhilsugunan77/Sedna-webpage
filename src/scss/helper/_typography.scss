@@ -13,15 +13,31 @@
     }
 }
 
-.uppercase{
-    text-transform: uppercase;
+@each $lh,$v in $line-height{
+    .lh-#{$lh}{
+        line-height: $v + px;
+    }
 }
+
+// ================================  text COLORS class =========================================
 
 .text-white{
     color: $white;
 }
 
+.text-color-20{
+    color: $color-20;
+}
 
+.text-color-40{
+    color: $color-40;
+}
+
+// ================================ / text COLORS class =========================================
+
+.uppercase{
+    text-transform: uppercase;
+}
 .border-secondary{
     border-bottom:1px solid rgb(255, 255, 255,0.2);
 }
