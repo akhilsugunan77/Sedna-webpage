@@ -54,6 +54,7 @@
     padding: 20px 135px;
     &:hover{
         color: $white;
+        border: 2px solid transparent;
         background-color: $text-red-200;
     }
 }

@@ -22,7 +22,7 @@ footer{
                 }
             }
         }
-        .border-primary-t{
+        .border-secondary-top{
             max-width: 600px;
             width: 80%;
         }
@@ -41,6 +41,9 @@ footer{
                 @include center;
                 z-index: 1000;
             }
+            &:hover{
+                background-color: $color-twitter-dark;
+            }
         }
         .fa-facebook{
             position: relative;
@@ -49,6 +52,9 @@ footer{
             font-size: 22px;
             &::before{
                 @include center;
+            }
+            &:hover{
+                background-color: $color-facebook-dark;
             }
         }
         .arrow-top{
@@ -60,6 +66,9 @@ footer{
             transform: translate(50%);
             i{
                 @include center;
+            }
+            &:hover{
+                color:$text-red-100;
             }
         }
     }

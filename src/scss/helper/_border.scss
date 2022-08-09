@@ -1,0 +1,18 @@
+@use "variables" as *;
+@use "abstract" as *;
+
+.border-secondary-btm{
+    border-bottom:1px solid rgb(255, 255, 255,0.2);
+}
+
+.border-primary{
+    border-bottom:1px solid $border-color;
+}
+
+.border-secondary-top{
+    border-top:1px solid rgb(255, 255, 255,0.2);
+}
+
+.border-primary-right{
+    border-right:1px solid $border-color;
+}

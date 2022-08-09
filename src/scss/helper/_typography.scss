@@ -38,18 +38,5 @@
 .uppercase{
     text-transform: uppercase;
 }
-.border-secondary{
-    border-bottom:1px solid rgb(255, 255, 255,0.2);
-}
 
-.border-primary{
-    border-bottom:1px solid $border-color;
-}
 
-.border-primary-t{
-    border-top:1px solid rgb(255, 255, 255,0.2);
-}
-
-.border-right{
-    border-right:1px solid $border-color;
-}
