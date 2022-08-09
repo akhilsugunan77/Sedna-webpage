@@ -49,6 +49,7 @@ $text-red-100:$color-warning;
 $text-red-200:$color-error;
 
 // ================================   BACKGROUND COLORS ===============================================
+
 $bg-light-100:#f7f8fa;
 $bg-light-200:#e6e9ea;
 $bg-dark-100:#495061;
@@ -56,13 +57,13 @@ $bg-dark-200:$color-60;
 $bg-dark-300:#373d4a;
 $bg-dark-400:#3d4351cc;
 $bg-dark-500:#262b39e6;
-
 $bg-featured:#f7f8fa;
 $bg-highlighted:rgba(61, 67, 81, 0.8);
 
 
 
 // ================================     COMPONENT COLORS =========================================
-$btn-primary:$white;
-$btn-warning:$color-warning;
+$btn-white:$white;
+$btn-primary:$color-warning;
+
 $border-color:#e6e9ea;

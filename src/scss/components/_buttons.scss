@@ -1,12 +1,14 @@
 @use "variables" as *;
 @use "sass:color" as *;
 // ================================  buttons ===============================================
+
 %btn{
     display: inline-block;
     width: 100%;
     max-width: fit-content;
     font-size: 13px;
     border-radius: 40px;
+    transition: background-color 250ms ease-out;
     border: 2px solid transparent;
 }
 
@@ -16,8 +18,8 @@
     border: 2px solid $white;
     padding: 10px 30px;
     &:hover{
-        color: $btn-warning;
-        border:2px solid $btn-warning;
+        color: $btn-primary;
+        border:2px solid $btn-primary;
     }
 }
 
@@ -25,24 +27,24 @@
     @extend %btn;
     color: $white;
     padding: 20px 35px;
-    background-color: $btn-warning;
+    background-color: $btn-primary;
     &:hover{
-        color: $btn-warning;
+        color: $btn-primary;
         background-color: transparent;
-        border: 2px solid $btn-warning;
+        border: 2px solid $btn-primary;
     }
 }
 
 .btn-outline-primary{
     @extend %btn;
     padding: 20px 35px;
-    color: $btn-warning;
+    color: $btn-primary;
     background-color: transparent;
-    border: 2px solid $btn-warning;
+    border: 2px solid $btn-primary;
     &:hover{
         color: $white;
-        background-color: $btn-warning;
-        border: 2px solid $btn-warning;
+        background-color: $btn-primary;
+        border: 2px solid $btn-primary;
     }
 }
 
