@@ -24,22 +24,25 @@
 .btn-primary{
     @extend %btn;
     color: $white;
+    padding: 20px 35px;
     background-color: $btn-warning;
-    padding: 20px 36px;
     &:hover{
-        background-color: $text-red-200;
+        color: $btn-warning;
+        background-color: transparent;
+        border: 2px solid $btn-warning;
     }
 }
 
 .btn-outline-primary{
-    @extend .btn-primary;
+    @extend %btn;
+    padding: 20px 35px;
     color: $btn-warning;
     background-color: transparent;
     border: 2px solid $btn-warning;
-    padding: 20px 64px;
     &:hover{
         color: $white;
-        border: 2px solid $text-red-200;
+        background-color: $btn-warning;
+        border: 2px solid $btn-warning;
     }
 }
 
@@ -48,6 +51,11 @@
     display: block;
     border-radius: 0px;
     max-width: 400px;
+    padding: 20px 135px;
+    &:hover{
+        color: $white;
+        background-color: $text-red-200;
+    }
 }
 
 
@@ -57,6 +65,10 @@
 
 .btn-md{
     padding: 20px 35px;
+}
+
+.btn-lg{
+    padding: 20px 64px;
 }
 
 // ================================  links ===============================================
