@@ -33,6 +33,7 @@ footer{
         background-color: $bg-dark-300;
         line-height: 40px;
         .fa-twitter{
+            display: block;
             position: relative;
             @include size(60px,60px);
             background-color: $color-twitter;
@@ -46,6 +47,7 @@ footer{
             }
         }
         .fa-facebook{
+            display: block;
             position: relative;
             @include size(60px,60px);
             background-color: $color-facebook;
