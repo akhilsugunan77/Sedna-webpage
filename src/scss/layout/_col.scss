@@ -32,12 +32,6 @@
 }
 
 
-.grid-card-2{
-    grid-template-columns: .1fr 1fr;
-    gap: 10px;
-}
-
-
 .flex-2{
     display: flex;
     @include media(mobile){

@@ -35,10 +35,11 @@
     @include size(305px,600px);
     position: absolute;
     bottom: -200px;
-    left: 25%; 
+    left: 400px; 
 }
 
 .text-container{
+    background: $white;
     max-width: 500px;
     @include size(100%,100%);
     @include media(desktop){
