@@ -1,7 +1,7 @@
 @use "variables" as *;
 @use "abstract" as *;
 
-.container-fluid{
+.container{
     max-width: 1060px;
     width: 100%;
 }
@@ -68,6 +68,7 @@
 .cb{
     clear: both;
 }
+
 .clearfix::after{
     display: block;
     content: "";

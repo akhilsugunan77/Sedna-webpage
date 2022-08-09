@@ -9,16 +9,8 @@ footer{
         height: 60px;
         background-color: $bg-dark-100;
     }
-    .container{
-        display: flex;
-        @include media(mobile){
-            flex-direction: column-reverse;
-        }
-    }
-
     .col1{
         background-color: $bg-dark-200;
-        flex: 6 1 400px;
         .copyright{
             color: $color-20;
             line-height: 25px;
@@ -38,7 +30,6 @@ footer{
 
     .col2{
         position: relative;
-        flex: 4 1 400px;
         background-color: $bg-dark-300;
         line-height: 40px;
         .fa-twitter{

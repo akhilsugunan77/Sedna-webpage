@@ -1,10 +1,15 @@
 @use "abstract" as *;
 
-.fl-3col{
+%clearfix::after{
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.fl-3{
     .cols{
         float: left;
         width: 100%;
-        
     @include media(tablet){
             width:50%;
     }
@@ -12,37 +17,36 @@
     @include media(desktop){
         width:(33.33%);
     }
-    
 }
-
+@extend %clearfix;
 }
 
 .fl-2{
     @include media(tablet){
-        .col1{
+        .col{
             float: left;
             width: 50%;
         }
-        .col2{
-            float: right;
-            width: 50%;
-        }
     }
+@extend %clearfix;
 }
 
-.grid-col-3{
-    gap: 20px;
-    @include media(tablet){
-        grid-template-columns: repeat(2,1fr);
-    }
-
-    @include media(desktop){
-        grid-template-columns: repeat(3,1fr);
-    }
-}
 
 .grid-card-2{
     grid-template-columns: .1fr 1fr;
     gap: 10px;
 }
 
+
+.flex-2{
+    display: flex;
+    @include media(mobile){
+        flex-direction: column-reverse;
+    }
+    .col1{
+        flex: 7 1 400px;
+    }
+    .col2{
+        flex: 3 1 400px;
+    }
+}
