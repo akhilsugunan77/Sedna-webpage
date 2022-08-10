@@ -2,7 +2,6 @@ const gulp = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
 const browserSync =require("browser-sync").create();
 const cleanCss = require('gulp-clean-css');
-
 // css
 
 function style(){
@@ -26,4 +25,5 @@ function watch(){
 
 exports.style = style;
 exports.watch = watch;
+
 

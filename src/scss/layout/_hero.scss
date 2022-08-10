@@ -5,12 +5,20 @@
 .hero{
     @include size(100%,100vh);
     position: relative;
-
     .sm-none{
         display: none;
         @include media(desktop){
                 display: flex;
         }
+    }
+    @include media(mobile){
+        nav{
+            border-bottom: none;
+        }
+    }
+
+    .logo{
+        margin-left: 10px;
     }
 
     article{
@@ -18,12 +26,10 @@
         text-align: center;
         h2{
             font-size: 40px;
-            text-align: left;
         }
         h1{
             font-size: 15px;
             padding: 0 10px;
-            text-align: left;
         }
         @include media(tablet){
             h2{

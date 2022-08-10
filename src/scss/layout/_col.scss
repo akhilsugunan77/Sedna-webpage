@@ -34,13 +34,16 @@
 
 .flex-2{
     display: flex;
-    @include media(mobile){
-        flex-direction: column-reverse;
-    }
     .col1{
         flex: 7 1 400px;
     }
     .col2{
         flex: 3 1 400px;
+    }
+    @include media(mobile){
+        flex-direction: column-reverse;
+        .col1,.col2{
+            flex: 1 1 300px;
+        }
     }
 }

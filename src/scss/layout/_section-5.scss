@@ -3,6 +3,11 @@
 
 .section-5{
     height: 500px;
+    @include media(mobile){
+        height: 400px;
+        padding: 50px 20px;
+    }
+
     h2{
         font-size: 30px;
         @include media(tablet){

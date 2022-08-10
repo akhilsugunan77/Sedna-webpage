@@ -3,7 +3,16 @@
 
 
 footer{
+    @include media(mobile){
+       .band{
+           margin-top: 60px;
+       } 
+       .footer-links{
+        margin-top: 60px;
+       }
+    }
     background-color: $bg-dark-200;
+    margin-top: 0;
     .band{
         width: 100%;
         height: 60px;
