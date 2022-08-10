@@ -2,6 +2,7 @@ const gulp = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
 const browserSync =require("browser-sync").create();
 const cleanCss = require('gulp-clean-css');
+
 // css
 
 function style(){
@@ -26,4 +27,15 @@ function watch(){
 exports.style = style;
 exports.watch = watch;
 
+// Image minification
+
+
+// import gulp from 'gulp';
+// import imagemini from 'gulp-imagemin';
+ 
+// gulp.task('miniImg',()=>{
+//     return gulp.src("src/assets/Images/**/*")
+//     .pipe(imagemini())
+//     .pipe(gulp.dest("public/assets/Images"))
+// })
 
