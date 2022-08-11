@@ -36,10 +36,14 @@
     }
     article{
         gap: 20px;
+        border-bottom:1px solid $border-color;
         h3{
             font-size: 15px;
             font-weight: 600;
             color: $text-dark-100;
+        }
+        &:last-child{
+            border: none;
         }
     }
 }

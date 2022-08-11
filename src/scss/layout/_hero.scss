@@ -17,10 +17,13 @@
         }
     }
 
-    .logo{
-        margin-left: 10px;
+    nav{
+        border-bottom:1px solid rgb(255, 255, 255,0.2);
+        .logo{
+            margin-left: 10px;
+        }
     }
-
+    
     article{
         @include center;
         text-align: center;

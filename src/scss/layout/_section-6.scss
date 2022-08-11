@@ -20,15 +20,22 @@
         font-size: 24px;
         color: $text-dark-100;
     }
-    h3{
-        font-size: 15px;
-        font-weight: 600;
-        color: $text-dark-100;
-    }
-    p{
-        font-size: 15px;
-        font-weight: 300;
-        color: $text-light-300;
-        line-height: 30px;
+
+    article{
+        border-right:1px solid $border-color;
+        h3{
+            font-size: 15px;
+            font-weight: 600;
+            color: $text-dark-100;
+        }
+        p{
+            font-size: 15px;
+            font-weight: 300;
+            color: $text-light-300;
+            line-height: 30px;
+        }
+        &:last-child{
+            border: none;
+        }
     }
 }
