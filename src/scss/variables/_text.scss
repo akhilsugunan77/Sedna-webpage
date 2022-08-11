@@ -1,11 +1,7 @@
 @font-face {
     font-family: 'open_sansregular';
     src: url('../../assets/fonts/OpenSans-Regular-webfont.woff');
-    src: url('../../assets/fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-        //  url('fonts/OpenSans-Regular-webfont.woff2') format('woff2'),
-         url('../../assets/fonts/OpenSans-Regular-webfont.woff') format('woff'),
-         url('../../assets/fonts/OpenSans-Regular-webfont.ttf') format('truetype'),
-         url('../../assets/fonts/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
+    src: url('../../assets/fonts/OpenSans-Regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -18,8 +14,8 @@
 }
 
 
-$font-family-open:'open_sansregular';
-$font-family-avenir:'Avenir Next LT Pro', sans-serif;
+$font-family-primary:'open_sansregular';
+$font-family-secondary:'Avenir Next LT Pro', sans-serif;
 
 
 // ================================  FONT map ===============================================

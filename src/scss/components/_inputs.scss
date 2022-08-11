@@ -5,28 +5,14 @@
   width: 100%;
   max-width: 400px;
   margin-inline: auto;
-  label {
+  
+  .input-field {
     height: 55px;
     width: 400px;
     display: flex;
     margin-bottom: 20px;
-    &:focus-within i {
-      color: $white;
-      border: 1px solid $text-red-100;
-      &::before {
-        border: none;
-      }
-    }
 
-    &:focus-within input {
-      border: 1px solid $text-red-100;
-      border-left: none;
-    }
-
-    &:focus-within {
-      background-color: $text-red-100;
-    }
-
+    
     i {
       width: 15%;
       display: inline-block;
@@ -36,10 +22,11 @@
       border-right: none;
       &::before {
         position: absolute;
+        color: $text-red-100;
         top: 50%;
         left: 40%;
-        transform: translateX(-40%);
-        transform: translateY(-50%);
+        transform: translateX(-50%);
+        transform: translateY(-40%);
         border-right: 1px solid $bg-light-200;
         padding-right: 20px;
       }
@@ -57,6 +44,23 @@
       &::placeholder {
         color: $color-30;
       }
+    }
+
+    &:focus-within i {
+      border: 1px solid $text-red-100;
+      &::before {
+        color: $white;
+        border: none;
+      }
+    }
+
+    &:focus-within input {
+      border: 1px solid $text-red-100;
+      border-left: none;
+    }
+
+    &:focus-within {
+      background-color: $text-red-100;
     }
   }
 }
