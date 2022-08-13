@@ -5,6 +5,11 @@
             @content;
         }
     }
+    @if $device == tabletonly {
+        @media screen and (min-width:600px) and (max-width:999px){
+            @content;
+        }
+    }
     @if $device == tablet {
         @media screen and (min-width:600px){
             @content;

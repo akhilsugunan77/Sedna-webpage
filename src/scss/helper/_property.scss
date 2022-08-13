@@ -4,12 +4,16 @@
 .container{
     max-width: 1060px;
     width: 100%;
+    margin-inline: auto;
 }
 
 .text-center{
     text-align: center;
 }
 
+.fixed{
+    position: fixed;
+}
 // ================================  ===============================================
 .sm-none{
     display: none;
@@ -17,6 +21,7 @@
             display: flex;
     }
 }
+// ================================ flex ===============================================
 
 .flex{
     display: flex;
@@ -24,6 +29,15 @@
 
 .flexcol{
     flex-direction: column;
+}
+
+.flex-cv{
+    align-items: center;
+}
+
+.flex-cvh{
+    justify-content: center;
+    align-items: center;
 }
 
 .flexwrap{
@@ -45,6 +59,9 @@
 .space-between{
     justify-content: space-between;
 }
+
+
+// ================================ flex ===============================================
 
 .ib{
     display: inline-block;

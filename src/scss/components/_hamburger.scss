@@ -3,13 +3,8 @@
 
 .menu{
     font-size: 40px;
-    position: absolute;
-    right: 0;
     color: $white;
     &:hover{
         color: $btn-primary;
-    }
-    @include media(desktop){
-        display: none;
     }
 }
