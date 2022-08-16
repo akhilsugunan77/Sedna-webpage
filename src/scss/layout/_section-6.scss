@@ -19,10 +19,31 @@
     h2{
         font-size: 24px;
         color: $text-dark-100;
+        text-align: center;
+        @include media(desktop){
+            text-align: left;
+        }
+    }
+
+    .content{
+        display: flex;
+        flex-direction: column;
+        @include media(desktop){
+            flex-direction: row;
+        }
+        article{
+            margin-bottom: 40px;
+            border: none;
+            @include media(tabletonly){
+                padding: 0;
+            }
+            @include media(desktop){
+                border-right:1px solid $border-color;
+            }
+        }
     }
 
     article{
-        border-right:1px solid $border-color;
         h3{
             font-size: 15px;
             font-weight: 600;

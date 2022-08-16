@@ -63,8 +63,9 @@
 .text-container{
     max-width: 500px;
     @include size(100%,100%);
+    margin: 0 auto;
     @include media(desktop){
         width: 450px;
-        float: right;
+        margin:0 0 0 auto;
     }
 }

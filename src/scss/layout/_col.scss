@@ -21,15 +21,15 @@
 @extend %clearfix;
 }
 
-.fl-2{
-    @include media(tablet){
-        .col{
-            float: left;
-            width: 50%;
-        }
-    }
-@extend %clearfix;
-}
+// .fl-2{
+//     @include media(tablet){
+//         .col{
+//             float: left;
+//             width: 50%;
+//         }
+//     }
+// @extend %clearfix;
+// }
 
 
 .flex-2{
@@ -56,5 +56,5 @@
 
 .grid-col-3{
     display: grid;
-    grid-template-columns:repeat(auto-fill,minmax(min(320px,100%),1fr));
+    grid-template-columns:repeat(auto-fit,minmax(min(320px,100%),1fr));
 }
