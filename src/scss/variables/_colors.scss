@@ -28,9 +28,9 @@ $color-40:#677074;
 $color-50:#5c5f6a;
 $color-60:#3d4351;
 $color-70:#1c3653b3;
-$color-orange:#f69d52;
-$color-warning:#ff5274;
-$color-error:#b11332;
+$color-warning:#f69d52;
+$color-error:#ff5274;
+$color-error-2:#b11332;
 $color-twitter:#1ab4ef;
 $color-facebook:#3b5898;
 $color-twitter-dark:#1794c6;
@@ -44,8 +44,8 @@ $text-light-400:$color-40;
 $text-light-500:$color-50;
 $text-dark-100:$color-60;
 $text-dark-200:$color-70;
-$text-red-100:$color-warning;
-$text-red-200:$color-error;
+$text-red-100:$color-error;
+$text-red-200:$color-error-2;
 
 // ================================   BACKGROUND COLORS ===============================================
 $bg-light-100:#f7f8fa;
@@ -62,6 +62,6 @@ $bg-highlighted:rgba(61, 67, 81, 0.8);
 
 // ================================     COMPONENT COLORS =========================================
 $btn-white:$white;
-$btn-primary:$color-warning;
+$btn-primary:$color-error;
 
 $border-color:#e6e9ea;

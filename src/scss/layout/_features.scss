@@ -4,9 +4,12 @@
 
 .features{
     @include media(mobile){
-        margin: 60px 0;
+        padding-block: 60px;
     }
-    gap: 20px;
+    @include media(tabletonly){
+        padding-block: 80px;
+    }
+
     h3{
         color: $text-dark-100;
     }
@@ -16,7 +19,6 @@
         line-height: 25px;
     } 
     article{
-        width:340px;
         gap: 20px;
         @include media(mobile){
                 display: flex;

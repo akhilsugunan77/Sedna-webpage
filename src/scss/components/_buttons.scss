@@ -1,4 +1,5 @@
 @use "variables" as *;
+@use "animation" as *;
 @use "sass:color" as *;
 // ================================  buttons ===============================================
 
@@ -8,7 +9,6 @@
     max-width: fit-content;
     font-size: 13px;
     border-radius: 40px;
-    transition: background-color 250ms ease-out;
     border: 2px solid transparent;
 }
 
@@ -17,10 +17,7 @@
     color: $white;
     border: 2px solid $white;
     padding: 10px 30px;
-    &:hover{
-        color: $btn-primary;
-        border:2px solid $btn-primary;
-    }
+    @extend .slide;
 }
 
 .btn-primary{
@@ -28,11 +25,6 @@
     color: $white;
     padding: 20px 35px;
     background-color: $btn-primary;
-    &:hover{
-        color: $btn-primary;
-        background-color: transparent;
-        border: 2px solid $btn-primary;
-    }
 }
 
 .btn-outline-primary{
@@ -41,11 +33,8 @@
     color: $btn-primary;
     background-color: transparent;
     border: 2px solid $btn-primary;
-    &:hover{
-        color: $white;
-        background-color: $btn-primary;
-        border: 2px solid $btn-primary;
-    }
+    z-index: 1;
+    @extend .slide;
 }
 
 .btn-primary-block{
@@ -54,11 +43,6 @@
     border-radius: 0px;
     max-width: 400px;
     padding: 20px;
-    &:hover{
-        color: $white;
-        border: 2px solid transparent;
-        background-color: $text-red-200;
-    }
 }
 
 
@@ -80,6 +64,7 @@
     &:hover{
         color: $text-red-100;
     }
+    @extend .underline;
 }
 
 .link-red{

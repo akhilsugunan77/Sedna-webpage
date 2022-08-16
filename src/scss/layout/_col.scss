@@ -52,3 +52,9 @@
 .flex-2-columns{
     display: flex;
 }
+
+
+.grid-col-3{
+    display: grid;
+    grid-template-columns:repeat(auto-fill,minmax(min(320px,100%),1fr));
+}
