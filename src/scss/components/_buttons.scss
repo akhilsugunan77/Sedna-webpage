@@ -69,4 +69,5 @@
 
 .link-red{
     color:$text-red-200 ;
+    @extend .underline;
 }

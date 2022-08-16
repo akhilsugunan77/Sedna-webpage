@@ -24,3 +24,9 @@ a{
 li{
 	list-style: none;
 }
+
+:focus{
+    outline-color:$color-error;
+    outline-style: solid;
+    outline-width:2px;
+}

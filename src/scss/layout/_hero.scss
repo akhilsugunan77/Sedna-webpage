@@ -97,8 +97,13 @@
 
     .chevron{
         @include center-btm;
+        width: 50px;
+        height: 50px;
         color: $white;
-        &:hover{
+        i{
+            @include center;
+        }
+        &:hover,&:focus{
             color:$text-red-100;
         }
     }

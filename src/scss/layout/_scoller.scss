@@ -34,37 +34,48 @@
         letter-spacing: 2px;
     }
 
-    .fa-chevron-left{
-        @include media(mobile){
-            display: none;
+    button{
+        &:hover,&:focus{
+            outline: $white;
         }
-       color: $off-white;
-       position: absolute;
-       top: 50%;
-       left: 50px;
-       transform: translateY(-50%);
-       &:hover{
-        color: $white;
-       }
+        i{
+            color: $white;
+        }
     }
 
-    .fa-chevron-right{
+    .arrow-left{
         @include media(mobile){
             display: none;
         }
-       color: $off-white;
-       position: absolute;
-       top: 50%;
-       right: 50px;
-       transform: translateY(-50%);
-       &:hover{
-        color: $white;
-       }
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 50px;
+        padding: 10px 20px;
+        border-radius: 50px;
+        &:hover,&:focus{
+            background-color:$off-white;
+        }
+    }
+
+    .arrow-right{
+        @include media(mobile){
+            display: none;
+        }
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 50px;
+        padding: 10px 20px;
+        border-radius: 50px;
+        &:hover,&:focus{
+            background-color:$off-white;
+        }
     }
 
     .scoll-dots{
         @include center-btm;
-        div{
+        button{
             background-color: $color-50;
             display: inline-block;
             padding: 5px;

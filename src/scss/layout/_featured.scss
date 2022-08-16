@@ -50,22 +50,24 @@
 
 .ipad{
     @include size(550px,1000px);
-    position: absolute
+    position: absolute;
 }
 
 .iphone{
     @include size(305px,600px);
     position: absolute;
     bottom: -200px;
-    left: 400px; 
+    left: 400px;
 }
 
 .text-container{
     max-width: 500px;
+    background:$bg-light-100;
+    padding: 0 20px;
     @include size(100%,100%);
     margin: 0 auto;
     @include media(desktop){
-        width: 450px;
+        width: 500px;
         margin:0 0 0 auto;
     }
 }

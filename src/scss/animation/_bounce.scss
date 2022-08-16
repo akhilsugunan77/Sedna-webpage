@@ -1,0 +1,14 @@
+.bounce{
+    &:hover,&:focus{
+        animation: jump 1.2s ease-in-out infinite;
+        outline: none;
+    }
+}
+
+@keyframes jump{
+    0%{transform: translate(-50%,0);}
+    25%{transform: translate(-50%,-100%);}
+    50%{transform: translate(-50%,0);}
+    75%{transform: translate(-50%,-100%);}
+    100%{transform: translate(-50%,0);}
+}

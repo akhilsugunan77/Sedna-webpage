@@ -1,7 +1,7 @@
 @use "variables" as *;
 @use "abstract" as *;
 
-.section-5{
+.highlighted{
     height: 500px;
     @include media(mobile){
         height: 350px;
