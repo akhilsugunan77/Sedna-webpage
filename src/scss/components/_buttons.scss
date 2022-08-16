@@ -41,6 +41,9 @@
     border-radius: 0px;
     max-width: 400px;
     padding: 20px;
+    background-color: transparent;
+    border: 2px solid transparent;
+    @extend .slide-ltr;
 }
 
 

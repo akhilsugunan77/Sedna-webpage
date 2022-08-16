@@ -2,7 +2,7 @@
 @use "abstract" as *;
 
 
-.features{
+.attributes{
     @include media(mobile){
         padding-block: 60px;
     }
