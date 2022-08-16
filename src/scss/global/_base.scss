@@ -26,7 +26,5 @@ li{
 }
 
 :focus{
-    outline-color:$color-error;
-    outline-style: solid;
-    outline-width:2px;
+outline: 2px solid $color-error;
 }
