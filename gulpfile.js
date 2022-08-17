@@ -2,7 +2,7 @@ const gulp = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
 const browserSync =require("browser-sync").create();
 const cleanCss = require('gulp-clean-css');
-
+const concat = require('gulp-concat');
 // css
 
 function style(){
@@ -13,6 +13,12 @@ function style(){
             .pipe(browserSync.stream());
 }
 
+function bundlejs(){
+    return gulp.src("./src/js/**/*.js")
+        .pipe(concat("main.js"))
+        .pipe(gulp.dest("./public/js/"))
+}
+
 function watch(){
     browserSync.init({
         server:{
@@ -20,12 +26,14 @@ function watch(){
         }
     })
     gulp.watch("./src/scss/**/*.scss",style);
-    gulp.watch("./public/*.html").on("change",browserSync.reload)
+    gulp.watch("./public/*.html").on("change",browserSync.reload);
+    gulp.watch("./src/js/**/*.js",bundlejs);
 }
 
 
 exports.style = style;
 exports.watch = watch;
+exports.bundlejs = bundlejs;
 
 // Image minification
 
