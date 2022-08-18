@@ -3,6 +3,7 @@
 
 
 .scoller{
+
     @include media(mobile){
         height: 400px;
         padding: 50px 0;
@@ -84,6 +85,12 @@
                 outline: 2px solid white;
             }
         }
+    }
+
+
+    .container{
+        position: absolute;
+        @include center;
     }
 
 }
