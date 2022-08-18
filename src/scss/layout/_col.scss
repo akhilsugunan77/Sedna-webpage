@@ -46,5 +46,9 @@
 
 .grid-col-3{
     display: grid;
-    grid-template-columns:repeat(auto-fit,minmax(min(320px,100%),1fr));
+    // grid-template-columns:repeat(auto-fit,minmax(min(320px,100%),1fr));
+    grid-template-columns: 1fr;
+    @include media(desktop){
+        grid-template-columns: repeat(3,1fr);
+    }
 }
