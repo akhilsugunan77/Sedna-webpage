@@ -13,10 +13,12 @@
 .btn-light{
     @extend %btn;
     color: $white;
-    border: 2px solid $white;
     padding: 10px 30px;
     background-color: transparent;
     @extend .slide;
+    &::after{
+        border: 2px solid $white;
+    }
 }
 
 .btn-primary{
@@ -31,7 +33,7 @@
     // padding: 20px 35px;
     color: $btn-primary;
     background-color: transparent;
-    border: 2px solid $btn-primary;
+    border: none;
     @extend .slide;
 }
 
@@ -43,7 +45,16 @@
     padding: 20px;
     background-color: transparent;
     border: 2px solid transparent;
-    @extend .slide-ltr;
+    @extend .slide;
+    &::before{
+        border-radius: 0;
+        background-color: $color-error-2;
+    }
+    &::after{
+        border-radius: 0;
+        background-color: $color-error;
+        z-index: -2;
+    }
 }
 
 
