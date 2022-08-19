@@ -19,8 +19,6 @@
 
 $white:#ffffff;
 $off-white:rgba(255, 255, 254, 0.5);
-
-
 $color-10:#bcc1c3;
 $color-20:#acb1b4;
 $color-30:#7a8387;
@@ -65,3 +63,8 @@ $btn-white:$white;
 $btn-primary:$color-error;
 
 $border-color:#e6e9ea;
+
+// ================================ Swiper theme =========================================
+:root {
+    --swiper-theme-color: white;    
+}

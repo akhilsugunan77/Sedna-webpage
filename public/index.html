@@ -13,106 +13,149 @@
       content="Present your product, start up, or portfolio in a beautifully modern way.Turn your visitors in to clients."
     />
     <meta name="keywords" content="sedna, portfolio, one page website" />
-    <link rel="stylesheet" href="css/styles.css" />
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
-      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
     />
-    <script src="js/main.js" defer></script>
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+      />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <!-- @@@@@@@@@ HERO @@@@@@@@@@@ -->
     <section class="hero bg-hero">
       <header>
         <nav class="container flex flex-cv gap-20 text-white">
-          <a class="nav-logo mr-60" href="/"><img class="block" width="100px" height="20px" src="./assets/Images/logo/logo.png" alt="Sedna logo"></a>
+          <a class="nav-logo mr-60" href="/"
+            ><img
+              class="block"
+              width="100px"
+              height="20px"
+              src="./assets/Images/logo/logo.png"
+              alt="Sedna logo"
+          /></a>
           <ul class="flex gap-20 text-sm uppercase">
-            <li><a class="links " href="javascript:void(0)">features</a></li>
-            <li><a class="links " href="javascript:void(0)">assets</a></li>
-            <li><a class="links " href="javascript:void(0)">blog</a></li>
-            <li><a class="links " href="javascript:void(0)">download</a></li>
+            <li><a class="links" href="javascript:void(0)">features</a></li>
+            <li><a class="links" href="javascript:void(0)">assets</a></li>
+            <li><a class="links" href="javascript:void(0)">blog</a></li>
+            <li><a class="links" href="javascript:void(0)">download</a></li>
           </ul>
-          <a class="links ml-auto text-sm uppercase sm-none"  href="javascript:void(0)">login</a>
-          <a class="btn-light uppercase sm-none" href="javascript:void(0)">signup</a>
-          <button id="hamburger-btn-js" class="menu-btn ml-auto">
+          <a
+            class="links ml-auto text-sm uppercase sm-none"
+            href="javascript:void(0)"
+            >login</a
+          >
+          <a class="btn-light uppercase sm-none" href="javascript:void(0)"
+            >signup</a
+          >
+          <button id="hamburger-btn-js" class="menu-btn ml-auto" onclick="click">
             <span class="line"></span>
             <span class="line"></span>
             <span class="line"></span>
           </button>
         </nav>
-          <div id="mobile-menu-js" class="mobile-menu">
-            <ul class="text-sm uppercase pt-80">
-              <li class="links"><a href="javascript:void(0)">features</a></li>
-              <li class="links"><a href="javascript:void(0)">assets</a></li>
-              <li class="links"><a href="javascript:void(0)">blog</a></li>
-              <li class="links"><a href="javascript:void(0)">download</a></li>
-              <li class="links"><a class="text-sm uppercase"  href="javascript:void(0)">login</a></li>
-              <li class="links"><a class="text-sm uppercase" href="javascript:void(0)">signup</a></li>
-            </ul>        
-          </div>
-        </header>
+        <div id="mobile-menu-js" class="mobile-menu">
+          <ul class="text-sm uppercase pt-80">
+            <li class="links"><a href="javascript:void(0)">features</a></li>
+            <li class="links"><a href="javascript:void(0)">assets</a></li>
+            <li class="links"><a href="javascript:void(0)">blog</a></li>
+            <li class="links"><a href="javascript:void(0)">download</a></li>
+            <li class="links">
+              <a class="text-sm uppercase" href="javascript:void(0)">login</a>
+            </li>
+            <li class="links">
+              <a class="text-sm uppercase" href="javascript:void(0)">signup</a>
+            </li>
+          </ul>
+        </div>
+      </header>
       <article class="container text-white px-20">
         <h2 class="mb-16 title">Design, collaborate win.</h2>
         <h1 class="mb-80 title">
           Introducing “Sedna”. A responsive one page website, designed &
           developed by Peter Finlan, exclusively for Codrops.
         </h1>
-        <a href="javascript:void(0)" class="btn-outline-primary btn-lg my-10 mx-20">DOWNLOAD FOR FREE</a
-        ><a href="javascript:void(0)" class="btn-outline-primary btn-lg my-10 mx-20">LEARN MORE</a>
+        <a
+          href="javascript:void(0)"
+          class="btn-outline-primary btn-lg my-10 mx-20"
+          >DOWNLOAD FOR FREE</a
+        ><a
+          href="javascript:void(0)"
+          class="btn-outline-primary btn-lg my-10 mx-20"
+          >LEARN MORE</a
+        >
       </article>
-      <a class="chevron ib mb-28 bounce" href="#attributes"><i class="fa-solid fa-chevron-down fa-xl"></i
+      <a class="chevron ib mb-28 bounce" href="#attributes"
+        ><i class="fa-solid fa-chevron-down fa-xl"></i
       ></a>
     </section>
     <!-- @@@@@@@@@ /HERO @@@@@@@@@@@ -->
     <!-- @@@@@@@@@ Second section @@@@@@@@@@@ -->
     <section>
-    <div id="attributes" class="attributes container py-120 px-20 grid-col-3 gap-20">
-      <article class="cols flex">
-        <div class=""><div class="pencil"></div></div>
-        <div>
-          <h3 class="text-md semi-bold">EASILY CUSTOMISED</h3>
-          <p class="text-md light my-10">
-            Easily customise Sedna to suit your start up, portfolio or product.
-            Take advantage of the layered Sketch file and bring your product to
-            life.
-          </p>
-        </div>
-      </article>
-      <article class="cols flex">
-        <div><div class="bulb"></div></div>
-        <div>
-          <h3 class="text-md semi-bold">MODERN DESIGN</h3>
-          <p class="text-md light my-10">
-            Designed with modern trends and techniques in mind, Sedna will help
-            your product stand out in an already saturated market.
-          </p>
-        </div>
-      </article>
-      <article class="cols flex">
-        <div><div class="react"></div></div>
-        <div>
-          <h3 class="text-md semi-bold">RESPONSIVE DEVELOPMENT</h3>
-          <p class="text-md light my-10">
-            Built using the latest web technologies like html5, css3, and jQuery
-            rest assured Sedna website will look smashing on every decide under
-            the sun.
-          </p>
-        </div>
-      </article>
-    </div>
+      <div
+        id="attributes"
+        class="attributes container py-120 px-20 grid-col-3 gap-20"
+      >
+        <article class="cols flex">
+          <div class=""><div class="pencil"></div></div>
+          <div>
+            <h3 class="text-md semi-bold">EASILY CUSTOMISED</h3>
+            <p class="text-md light my-10">
+              Easily customise Sedna to suit your start up, portfolio or
+              product. Take advantage of the layered Sketch file and bring your
+              product to life.
+            </p>
+          </div>
+        </article>
+        <article class="cols flex">
+          <div><div class="bulb"></div></div>
+          <div>
+            <h3 class="text-md semi-bold">MODERN DESIGN</h3>
+            <p class="text-md light my-10">
+              Designed with modern trends and techniques in mind, Sedna will
+              help your product stand out in an already saturated market.
+            </p>
+          </div>
+        </article>
+        <article class="cols flex">
+          <div><div class="react"></div></div>
+          <div>
+            <h3 class="text-md semi-bold">RESPONSIVE DEVELOPMENT</h3>
+            <p class="text-md light my-10">
+              Built using the latest web technologies like html5, css3, and
+              jQuery rest assured Sedna website will look smashing on every
+              decide under the sun.
+            </p>
+          </div>
+        </article>
+      </div>
     </section>
     <!-- @@@@@@@@@ /Second section @@@@@@@@@@@ -->
     <!-- @@@@@@@@@ third section @@@@@@@@@@@ -->
     <section class="featured bg-featured pt-110">
       <div class="img-container relative">
         <div class="ipad">
-          <img loading="lazy" width="100%" height="100%" src="./assets/Images/phones/i-pad-air.png" alt="" />
+          <img
+            loading="lazy"
+            width="100%"
+            height="100%"
+            src="./assets/Images/phones/i-pad-air.png"
+            alt=""
+          />
         </div>
         <div class="iphone">
-          <img loading="lazy" width="100%" height="100%" src="./assets/Images/phones/i-phone-6.png" alt="" />
+          <img
+            loading="lazy"
+            width="100%"
+            height="100%"
+            src="./assets/Images/phones/i-phone-6.png"
+            alt=""
+          />
         </div>
       </div>
       <div class="container relative h-100">
@@ -156,16 +199,16 @@
     <!-- @@@@@@@@@ /third section @@@@@@@@@@@ -->
     <!-- @@@@@@@@@ four section @@@@@@@@@@@ -->
     <section class="content-box clearfix mt-110 mb-120">
-      <div  class="fr sm-none">
+      <div class="fr sm-none">
         <img
-        loading="lazy"
-        src="./assets/Images/bgimage/macbook-pro.png"
-        alt=""
-        width="740"
-        height="540"
+          loading="lazy"
+          src="./assets/Images/bgimage/macbook-pro.png"
+          alt=""
+          width="740"
+          height="540"
         />
       </div>
-      <article class="container mx-auto ">
+      <article class="container mx-auto">
         <h2 class="mb-20">Designed using Sketch!</h2>
         <p class="mb-20">
           Easily change/switch/swap every placeholder inside every image on
@@ -179,7 +222,9 @@
           adipiscing elit. Donec fermentum augue quis augue ornare, eget
           faucibus felis pharetra. Proin condimentum et leo quis fringilla.
         </p>
-        <a class="btn-outline-primary btn-sm" href="javascript:void(0)">WHAT’S SKETCH?</a>
+        <a class="btn-outline-primary btn-sm" href="javascript:void(0)"
+          >WHAT’S SKETCH?</a
+        >
       </article>
     </section>
     <!-- @@@@@@@@@ /four section @@@@@@@@@@@ -->
@@ -194,7 +239,9 @@
           Change/swap/edit every aspect of Sedna before you hit development with
           the included Sketch file.
         </p>
-        <a href="javascript:void(0)" class="btn-outline-primary btn-lg">DOWNLOAD NOW!</a>
+        <a href="javascript:void(0)" class="btn-outline-primary btn-lg"
+          >DOWNLOAD NOW!</a
+        >
         <img
           loading="lazy"
           class="large-icon"
@@ -208,27 +255,27 @@
     <section class="wrapper container mt-120 mb-110 px-5">
       <h2 class="text-2xl mb-80">Showcase your smashing product with Sedna</h2>
       <div class="content">
-      <article class="col pr-100 md-p-r-20">
-        <h3 class="text-md mb-20">EXCLUSIVE TO CODROPS</h3>
-        <p class="">
-          Minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-      </article>
-      <article class="pl-100 col md-p-l-20">
-        <h3 class="text-md mb-20">EXCLUSIVE TO CODROPS</h3>
-        <p class="">
-          Minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-      </article>
-    </div>
+        <article class="col pr-100 md-p-r-20">
+          <h3 class="text-md mb-20">EXCLUSIVE TO CODROPS</h3>
+          <p class="">
+            Minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </article>
+        <article class="pl-100 col md-p-l-20">
+          <h3 class="text-md mb-20">EXCLUSIVE TO CODROPS</h3>
+          <p class="">
+            Minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </article>
+      </div>
     </section>
     <!-- @@@@@@@@@ /six section @@@@@@@@@@@ -->
     <!-- @@@@@@@@@ seven section @@@@@@@@@@@ -->
@@ -257,18 +304,17 @@
               src="./assets/Images/videos/mask-tumblr-np-2-z-7-a-ll-ia-1-qfirfao-1-1280.png"
               alt=""
           /></a>
-          <span class="text-xs text-color-20 ib mt-32 mb-6"
-              >TECHNOLOGY</span
-            ><br />
-            <a href="javascript:void(0)">
+          <span class="text-xs text-color-20 ib mt-32 mb-6">TECHNOLOGY</span
+          ><br />
+          <a href="javascript:void(0)">
             <span class="text-sm lh-md text-color-40"
               >Why IE8 support is deminishing</span
             ><i class="text-color-40 ml-10 fa-solid fa-chevron-right fa-2xs"></i
-            ></a>
+          ></a>
         </article>
         <article class="cols mb-20">
           <a class="block" href="javascript:void(0)">
-          <img
+            <img
               loading="lazy"
               class="block w-100 h-300px cover"
               src="./assets/Images/videos/mask-photo-1429305336325-b-84-ace-7-eba-3-b.png"
@@ -276,30 +322,57 @@
           /></a>
           <span class="text-xs text-color-20 ib mt-32 mb-6">PRODUCT</span><br />
           <a href="javascript:void(0)">
-          <span class="text-sm lh-md text-color-40"
+            <span class="text-sm lh-md text-color-40"
               >Sedna tutorial: How to begin your…</span
             ><i class="text-color-40 ml-10 fa-solid fa-chevron-right fa-2xs"></i
           ></a>
         </article>
-      
       </div>
-      <a href="javascript:void(0)" class="btn-outline-primary btn-sm mt-60">MORE NEWS</a>
+      <a href="javascript:void(0)" class="btn-outline-primary btn-sm mt-60"
+        >MORE NEWS</a
+      >
     </section>
     <!-- @@@@@@@@@ /seven section @@@@@@@@@@@ -->
     <!-- @@@@@@@@@ eight section @@@@@@@@@@@ -->
-    <section class="scoller pt-10 my-120 relative">
-      <!-- <button class="arrow-left"><i class="fa-solid fa-chevron-left fa-3x"></i></button>
-      <button class="arrow-right"><i class="fa-solid fa-chevron-right fa-3x"></i></button>
-      <div class="container mx-auto text-center mt-120 px-5">
-        <div class="circle mb-28"></div>
-        <h2 class="mb-28">“Sedna is crucial to our workflow”</h2>
-        <h3>PETER FINLAN, CEO OF AWESOMESAUCE TECHNOLOGIES</h3>
+    <section class="scoller pt-10 my-120">
+      <div class="carousel">
+          <!-- Slider main container -->
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <img width="100%" height="100%" src="./assets/Images/bgimage/93.png" alt="">
+                <article class="article">
+                  <div class="circle mb-28"></div>
+                  <h2 class="mb-28">“Sedna is crucial to our workflow”</h2>
+                  <h3>PETER FINLAN, CEO OF AWESOMESAUCE TECHNOLOGIES</h3>
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <img width="100%" height="100%" src="./assets/Images/bgimage/93.png" alt="">
+                <article class="article">
+                  <div class="circle mb-28"></div>
+                  <h2 class="mb-28">“Sedna is crucial to our workflow”</h2>
+                  <h3>PETER FINLAN, CEO OF AWESOMESAUCE TECHNOLOGIES</h3>
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <img width="100%" height="100%" src="./assets/Images/bgimage/93.png" alt="">
+                <article class="article">
+                  <div class="circle mb-28"></div>
+                  <h2 class="mb-28">“Sedna is crucial to our workflow”</h2>
+                  <h3>PETER FINLAN, CEO OF AWESOMESAUCE TECHNOLOGIES</h3>
+                </article>
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- If we need navigation buttons -->
+            <div id="prev" class="swiper-button-prev"></div>
+            <div id="next" class="swiper-button-next"></div>
+          </div>
       </div>
-      <div class="scoll-dots mb-36">
-        <button><div></div></button>
-        <button  class="mx-5"><div></div></button>
-        <button><div></div></button>
-      </div> -->
     </section>
     <!-- @@@@@@@@@ /eight section @@@@@@@@@@@ -->
     <!-- @@@@@@@@@ nine section @@@@@@@@@@@ -->
@@ -310,10 +383,15 @@
           Grab your copy today, exclusively from Codrops
         </p>
         <form class="input-container">
-            <div class="input-field"  for="email"><i class="fa-solid fa-envelope"></i><input  name="email"  type="email" placeholder="Email" /></div>
-            <div class="input-field" for="email"><i class="fa-solid fa-lock"></i
-              ><input  name="password" type="password" placeholder="Password" /></div>
-            <button class="btn-primary-block">SIGN UP FOR FREE</button>
+          <div class="input-field" for="email">
+            <i class="fa-solid fa-envelope"></i
+            ><input name="email" type="email" placeholder="Email"/><span></span>
+          </div>
+          <div class="input-field" for="email">
+            <i class="fa-solid fa-lock"></i
+            ><input name="password" type="password" placeholder="Password" />
+          </div>
+          <button class="btn-primary-block">SIGN UP FOR FREE</button>
         </form>
       </div>
     </section>
@@ -324,17 +402,34 @@
       <div class="flex-2 w-100 text-center">
         <div class="col1 pb-120">
           <div
-            class="footer-links flex flexwrap justify-center gap-20 mt-120 mb-20 pt-28 text-white  mx-auto"
+            class="footer-links flex flexwrap justify-center gap-20 mt-120 mb-20 pt-28 text-white mx-auto"
           >
-            <a href="javascript:void(0)" class="links text-sm semi-bold lh-lg uppercase">FEATURES</a
-            ><a href="javascript:void(0)" class="links text-sm semi-bold lh-lg uppercase">PRICING</a
-            ><a href="javascript:void(0)" class="links text-sm semi-bold lh-lg uppercase">SIGNUP</a
-            ><a href="javascript:void(0)" class="links text-sm semi-bold lh-lg uppercase">LICENSE</a
-            ><a href="javascript:void(0)" class="links text-sm semi-bold lh-lg uppercase">PETER FINLAN</a>
+            <a
+              href="javascript:void(0)"
+              class="links text-sm semi-bold lh-lg uppercase"
+              >FEATURES</a
+            ><a
+              href="javascript:void(0)"
+              class="links text-sm semi-bold lh-lg uppercase"
+              >PRICING</a
+            ><a
+              href="javascript:void(0)"
+              class="links text-sm semi-bold lh-lg uppercase"
+              >SIGNUP</a
+            ><a
+              href="javascript:void(0)"
+              class="links text-sm semi-bold lh-lg uppercase"
+              >LICENSE</a
+            ><a
+              href="javascript:void(0)"
+              class="links text-sm semi-bold lh-lg uppercase"
+              >PETER FINLAN</a
+            >
           </div>
           <span class="copyright">
             Copyright © 2022 <span class="text-white">Sedna</span> <br />
-            <a class="links" href="javascript:void(0)">Licence</a> | Design & Developed by
+            <a class="links" href="javascript:void(0)">Licence</a> | Design &
+            Developed by
             <a class="links" href="javascript:void(0)">Peter Finlan</a>
           </span>
         </div>
@@ -342,13 +437,41 @@
           <a class="arrow-top ib" href="#"
             ><i class="fa-solid fa-chevron-up fa-xl"></i
           ></a>
-          <span class="footer-links ib text-sm semi-bold lh-lg mb-20 mt-120">SHARE SEDNA WITH YOUR FRIENDS</span
+          <span class="footer-links ib text-sm semi-bold lh-lg mb-20 mt-120"
+            >SHARE SEDNA WITH YOUR FRIENDS</span
           ><br />
-          <a href="javascript:void(0)" class="mr-20 ib"><i class="fa-brands fa-twitter"></i></a
-          ><a href="javascript:void(0)" class="ib"><i class="fa-brands fa-facebook"></i></a>
+          <a href="javascript:void(0)" class="mr-20 ib"
+            ><i class="fa-brands fa-twitter"></i></a
+          ><a href="javascript:void(0)" class="ib"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
         </div>
       </div>
     </footer>
     <!-- @@@@@@@@@ /footer section @@@@@@@@@@@ -->
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper('.swiper', {
+          // Optional parameters
+          loop: true,
+          // If we need pagination
+          pagination: {
+            el: '.swiper-pagination',
+            clickable:true,
+          },
+
+          // Navigation arrows
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+
+          // And if we need scrollbar
+          scrollbar: {
+            el: '.swiper-scrollbar',
+          },
+        });
+    </script>
   </body>
 </html>

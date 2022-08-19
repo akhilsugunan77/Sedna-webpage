@@ -62,7 +62,23 @@
     }
 
   }
-  input:invalid{
-    background-color: rgb(255, 0, 0, .2);
+  .input-container span{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+  }
+
+  input:disabled{
+    background-color: rgba(77, 76, 76, 0.2);
+  }
+
+  input:valid{
+    background-color: rgba(0, 255, 94, 0.235);
+  }
+  input:required{
+    border: 2px solid red;
+  }
+  input:valid + span{
+    background-color: rgba(0, 255, 94, 0.235);
   }
 }
