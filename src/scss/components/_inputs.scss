@@ -14,7 +14,7 @@
     margin-bottom: 20px;
 
     
-    i {
+    .icon {
       width: 15%;
       display: inline-block;
       height: 55px;
@@ -28,7 +28,7 @@
         left: 40%;
         transform: translateX(-50%);
         transform: translateY(-40%);
-        border-right: 1px solid $bg-light-200;
+        // border-right: 1px solid $bg-light-200;
         padding-right: 20px;
       }
     }
@@ -58,7 +58,7 @@
 
     &:focus-within input {
       border: 1px solid $text-red-100;
-      border-left: none;
+      // border-left: none;
     }
 
   }
@@ -73,12 +73,40 @@
   }
 
   input:valid{
-    background-color: rgba(0, 255, 94, 0.235);
+    border: 1px solid rgba(0, 128, 0, .5);
+    background-color: rgba(0, 128, 0, .1);
   }
+
   input:required{
+    border: 1px solid rgba(255, 204, 0, 0.5);
+    background-color: rgba(255, 204, 0, .1);
+  }
+  
+  input:invalid{
     border: 2px solid red;
+    background-color: rgba(255, 0, 0, 0.1);
   }
-  input:valid + span{
-    background-color: rgba(0, 255, 94, 0.235);
+
+// class
+
+  input.success{
+    border: 1px solid rgba(0, 128, 0, .5);
+    background-color: rgba(0, 128, 0, .1);
   }
+
+  input.error{
+    border: 2px solid red;
+    background-color: rgba(255, 0, 0, 0.1);
+  }
+
+  input.disabled{
+    border: 1px solid rgba(77, 76, 76, 0.5);
+    background-color: rgba(77, 76, 76, 0.1);
+  }
+
+  input.warning{
+    border: 1px solid rgba(255, 204, 0, 0.5);
+    background-color: rgba(255, 204, 0, .1);
+  }
+
 }
