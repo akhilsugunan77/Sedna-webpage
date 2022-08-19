@@ -7,14 +7,14 @@
     position: relative;
     .sm-none{
         display: none;
-        @include media(tablet){
-                display: inline-block;
+        @include media(desktop){
+            display: inline-block;
         }
     }
     
     nav{
-        position: relative;
         border-bottom:1px solid rgb(255, 255, 255,0.2);
+        justify-content: space-between;
         @include media(mobile){
                 border-bottom: none;
                 padding: 10px;
@@ -24,13 +24,6 @@
         }
         @include media(desktop){
             padding: 40px 10px 28px;
-        }
-        .nav-logo{
-            @include media(tabletonly){
-                position: absolute;
-                left: 50%;
-                transform: translateX(-50%);
-            }
         }
         ul{
             display: none;
@@ -47,9 +40,7 @@
         }
         
         .menu{
-            order: 0;
             @include media(tablet){
-                order: -1;
                 margin-left: 0;
             }
 

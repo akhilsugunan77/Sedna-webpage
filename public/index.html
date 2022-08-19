@@ -21,9 +21,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="css/owl.carousel.css">
-    <link rel="stylesheet" href="css/owl.theme.green.css">
-    <script src="js/main.js"></script>
+    <script src="js/main.js" defer></script>
   </head>
   <body>
     <!-- @@@@@@@@@ HERO @@@@@@@@@@@ -->
@@ -39,12 +37,26 @@
           </ul>
           <a class="links ml-auto text-sm uppercase sm-none"  href="javascript:void(0)">login</a>
           <a class="btn-light uppercase sm-none" href="javascript:void(0)">signup</a>
-            <button class="menu ml-auto "><i class="fa-solid fa-bars"></i></button>
+          <button id="hamburger-btn-js" class="menu-btn ml-auto">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+          </button>
         </nav>
-      </header>
+          <div id="mobile-menu-js" class="mobile-menu">
+            <ul class="text-sm uppercase pt-80">
+              <li class="links"><a href="javascript:void(0)">features</a></li>
+              <li class="links"><a href="javascript:void(0)">assets</a></li>
+              <li class="links"><a href="javascript:void(0)">blog</a></li>
+              <li class="links"><a href="javascript:void(0)">download</a></li>
+              <li class="links"><a class="text-sm uppercase"  href="javascript:void(0)">login</a></li>
+              <li class="links"><a class="text-sm uppercase" href="javascript:void(0)">signup</a></li>
+            </ul>        
+          </div>
+        </header>
       <article class="container text-white px-20">
-        <h2 class="mb-16">Design, collaborate win.</h2>
-        <h1 class="mb-80">
+        <h2 class="mb-16 title">Design, collaborate win.</h2>
+        <h1 class="mb-80 title">
           Introducing “Sedna”. A responsive one page website, designed &
           developed by Peter Finlan, exclusively for Codrops.
         </h1>
@@ -97,10 +109,10 @@
     <section class="featured bg-featured pt-110">
       <div class="img-container relative">
         <div class="ipad">
-          <img width="100%" height="100%" src="./assets/Images/phones/i-pad-air.png" alt="" />
+          <img loading="lazy" width="100%" height="100%" src="./assets/Images/phones/i-pad-air.png" alt="" />
         </div>
         <div class="iphone">
-          <img width="100%" height="100%" src="./assets/Images/phones/i-phone-6.png" alt="" />
+          <img loading="lazy" width="100%" height="100%" src="./assets/Images/phones/i-phone-6.png" alt="" />
         </div>
       </div>
       <div class="container relative h-100">
@@ -146,6 +158,7 @@
     <section class="content-box clearfix mt-110 mb-120">
       <div  class="fr sm-none">
         <img
+        loading="lazy"
         src="./assets/Images/bgimage/macbook-pro.png"
         alt=""
         width="740"
@@ -183,6 +196,7 @@
         </p>
         <a href="javascript:void(0)" class="btn-outline-primary btn-lg">DOWNLOAD NOW!</a>
         <img
+          loading="lazy"
           class="large-icon"
           src="./assets/Images/bgimage/sketch-logo.png"
           alt=""
@@ -223,6 +237,7 @@
         <article class="cols mb-20">
           <a class="block" href="javascript:void(0)">
             <img
+              loading="lazy"
               class="block w-100 h-300px cover"
               src="./assets/Images/videos/mask-photo-1428550670225-15-f-007-f-6-f-1-ba.png"
               alt=""
@@ -237,6 +252,7 @@
         <article class="cols mb-20">
           <a class="block" href="javascript:void(0)">
             <img
+              loading="lazy"
               class="block w-100 h-300px cover"
               src="./assets/Images/videos/mask-tumblr-np-2-z-7-a-ll-ia-1-qfirfao-1-1280.png"
               alt=""
@@ -253,6 +269,7 @@
         <article class="cols mb-20">
           <a class="block" href="javascript:void(0)">
           <img
+              loading="lazy"
               class="block w-100 h-300px cover"
               src="./assets/Images/videos/mask-photo-1429305336325-b-84-ace-7-eba-3-b.png"
               alt=""
@@ -270,7 +287,7 @@
     </section>
     <!-- @@@@@@@@@ /seven section @@@@@@@@@@@ -->
     <!-- @@@@@@@@@ eight section @@@@@@@@@@@ -->
-    <section class="scoller pt-10 my-120">
+    <section class="scoller pt-10 my-120 relative">
       <!-- <button class="arrow-left"><i class="fa-solid fa-chevron-left fa-3x"></i></button>
       <button class="arrow-right"><i class="fa-solid fa-chevron-right fa-3x"></i></button>
       <div class="container mx-auto text-center mt-120 px-5">
@@ -283,23 +300,6 @@
         <button  class="mx-5"><div></div></button>
         <button><div></div></button>
       </div> -->
-      <div class="owl-carousel owl-theme">
-        <div class="item relative">
-          <img src="assets/Images/bgimage/93.png" alt="">
-          <div class="container mx-auto text-center px-5">
-            <div class="circle mb-28"></div>
-            <h2 class="mb-28">“Sedna is crucial to our workflow”</h2>
-            <h3>PETER FINLAN, CEO OF AWESOMESAUCE TECHNOLOGIES</h3>
-          </div>
-        </div>
-        <div class="item">
-          <img src="assets/Images/bgimage/93.png" alt="">
-        </div>
-        <div class="item">
-          <img src="assets/Images/bgimage/93.png" alt="">
-        </div>
-    </div> 
-
     </section>
     <!-- @@@@@@@@@ /eight section @@@@@@@@@@@ -->
     <!-- @@@@@@@@@ nine section @@@@@@@@@@@ -->
@@ -309,12 +309,12 @@
         <p class="mb-56 text-md text-color-40 lh-md">
           Grab your copy today, exclusively from Codrops
         </p>
-        <div class="input-container">
+        <form class="input-container">
             <div class="input-field"  for="email"><i class="fa-solid fa-envelope"></i><input  name="email"  type="email" placeholder="Email" /></div>
             <div class="input-field" for="email"><i class="fa-solid fa-lock"></i
               ><input  name="password" type="password" placeholder="Password" /></div>
-            <a href="javascript:void(0)" class="btn-primary-block">SIGN UP FOR FREE</a>
-        </div>
+            <button class="btn-primary-block">SIGN UP FOR FREE</button>
+        </form>
       </div>
     </section>
     <!-- @@@@@@@@@ /nine section @@@@@@@@@@@ -->
@@ -350,14 +350,5 @@
       </div>
     </footer>
     <!-- @@@@@@@@@ /footer section @@@@@@@@@@@ -->
-    <script>
-      $(document).ready(function(){
-        $('.owl-carousel').owlCarousel({
-          items:1,
-          loop:true,
-          nav:true,
-        })
-      })
-    </script>
   </body>
 </html>

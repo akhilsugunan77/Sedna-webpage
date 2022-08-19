@@ -49,6 +49,7 @@
 
     &:focus-within i {
       border: 1px solid $text-red-100;
+      background-color:$color-error;
       &::before {
         color: $white;
         border: none;
@@ -60,8 +61,8 @@
       border-left: none;
     }
 
-    &:focus-within {
-      background-color: $text-red-100;
-    }
+  }
+  input:invalid{
+    background-color: rgb(255, 0, 0, .2);
   }
 }
